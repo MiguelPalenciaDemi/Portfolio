@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\Targa">
+      <UniqueIdentifier>{3e1bcad1-c0be-4d3d-ad49-06363fd13551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tool Interfaz">
+      <UniqueIdentifier>{2d2d1061-88ed-404e-bed4-234df5662b63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appication">
+      <UniqueIdentifier>{699fc9a7-9585-4cc7-a60c-1adb58e2c0d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appication\Base Bullet Old project">
+      <UniqueIdentifier>{fb74fd15-2e4c-44d7-8bdf-9c9b4654da98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appication\Lights">
+      <UniqueIdentifier>{f17cd3a6-f02c-4070-96d3-ba67b345ea7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appication\Material &amp; Uniforms Stuff">
+      <UniqueIdentifier>{ea2a76b5-118f-41a0-a65b-92e71526c11f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Old Project">
+      <UniqueIdentifier>{3467206f-9811-4a1b-8483-4d1a6338b018}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\source\Material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\My_Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Shader_Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\.libraries\targa\src\targa.c">
+      <Filter>Header Files\Targa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Catapult.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Door.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Joints.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Mesh.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Physic_World.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Platform.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\RigidBody.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Skybox.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Texture.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Texture_Cubemap.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Texture2D.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Transform.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Actor.cpp">
+      <Filter>Source Files\Old Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\Tool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Tool.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Tool.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\.libraries\targa\include\targa.h">
+      <Filter>Header Files\Targa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\My_Scene.hpp">
+      <Filter>Header Files\Appication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Scene.hpp">
+      <Filter>Header Files\Appication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Shader_List.hpp">
+      <Filter>Header Files\Appication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Actor.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Camera.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Catapult.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Circle.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Color_Buffer.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Color_Buffer_Rgba8888.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Door.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Joints.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Light.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Mesh.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\OpenGL.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Physic_World.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Plane.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Platform.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\RigidBody.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Shader.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Shape.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Skybox.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Terrain.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Texture.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Texture_Cubemap.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Texture2D.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Transform.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Vertex_Array.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Vertex_Buffer.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Windmill.hpp">
+      <Filter>Header Files\Appication\Base Bullet Old project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Point_Light.hpp">
+      <Filter>Header Files\Appication\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Directional_Light.hpp">
+      <Filter>Header Files\Appication\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Model.hpp">
+      <Filter>Header Files\Appication\Material &amp; Uniforms Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Material.hpp">
+      <Filter>Header Files\Appication\Material &amp; Uniforms Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\header\Shader_Program.hpp">
+      <Filter>Header Files\Appication\Material &amp; Uniforms Stuff</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\code\header\Tool.h">
+      <Filter>Header Files\Tool Interfaz</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

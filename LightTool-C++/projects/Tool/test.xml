@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" type="example">
+	<light class="Directional">
+		<direction>1.000000/0.500000/-0.500000 </direction>
+		<color>0.300000/0.500000/0.800000 </color>
+		<intensity>0.500000</intensity>
+		<ambient>0.300000</ambient>
+		<specular>0.000000</specular>
+	</light>
+</root>
+

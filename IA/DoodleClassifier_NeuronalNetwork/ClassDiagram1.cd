@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConstantValues" Collapsed="true">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAACAAAQABAAAgAAEAAAAAAACAAAACA=</HashCode>
+      <FileName>Assets\Scripts\ConstantValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAACAAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Data.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataManager">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAQAAAAAACCABgAAAAAAAAABACBAECAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Layer">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAwAEQAAAAAAAAAMAAAACQAAAQBAAAAQCAAAEBAA=</HashCode>
+      <FileName>Assets\Scripts\Layer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuralNetwork">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYgIABAACAAEQAAAAAAAAAAAAAAAAAAAAQgARAAA=</HashCode>
+      <FileName>Assets\Scripts\NeuralNetwork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuralNetworkImage">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAACgACAAAAAAAIAgGAAAgABhAoBAAUIAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\NeuralNetworkImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayMovieTextureOnUI" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQACAACAAEAAAAAAAAAAAAAAAAIAAAAwAAAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayMovieTextureOnUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveManagerBase" Collapsed="true">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAEAAIAAAAAAAAIAAAAAgAQAAAAAAAAEI=</HashCode>
+      <FileName>Assets\Scripts\SaveManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveManager">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SaveManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeightLoader">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAEMBAAAAQAAAAAEABAEAAAAGACEAAAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\WeightLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TrainingData">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Data.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

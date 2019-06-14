@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root version="1.0" type="example">
+	<light class="Point">
+		<position>0.000000/0.000000/0.000000 </position>
+		<color>0.000000/1.000000/0.000000 </color>
+		<intensity>1.000000</intensity>
+		<ambient>1.000000</ambient>
+		<specular>0.000000</specular>
+		<range>100.000000</range>
+	</light>
+	<light class="Directional">
+		<direction>1.000000/0.500000/-0.500000 </direction>
+		<color>1.000000/0.000000/0.000000 </color>
+		<intensity>0.500000</intensity>
+		<ambient>0.300000</ambient>
+		<specular>0.000000</specular>
+	</light>
+</root>
+

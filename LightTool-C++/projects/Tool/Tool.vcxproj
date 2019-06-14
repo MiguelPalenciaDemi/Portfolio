@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;SFML_STATIC;GLEW_STATIC;_SCL_SECURE_NO_WARNINGS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(SolutionDir)\..\..\.libraries\glew\include;$(SolutionDir)\..\..\.libraries\sfml-2.4.2-windows-vc15-32bit\include;$(SolutionDir)\..\..\.libraries\cpp-toolkit\headers;$(SolutionDir)\..\..\.libraries\cpp-toolkit\sources;$(SolutionDir)\..\..\.libraries\targa\src;$(SolutionDir)\..\..\.libraries\targa\include;$(SolutionDir)\..\..\.libraries\tinyobjloader-1.0\include;$(SolutionDir)\..\..\.libraries\glm\glm;$(SolutionDir)\..\..\.libraries\bullet-2.87\src;$(SolutionDir)\..\..\code\header;$(SolutionDir)\..\..\.libraries\parser\include;$(SolutionDir)\..\..\.libraries\rapidxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)\..\..\.libraries\cpp-toolkit\sources;$(SolutionDir)\..\..\.libraries\cpp-toolkit\headers;$(SolutionDir)\..\..\.libraries\glew\lib;$(SolutionDir)\..\..\.libraries\bullet-2.87\lib\vs-2017\32bit;$(SolutionDir)\..\..\.libraries\parser\lib;$(SolutionDir)\..\..\.libraries\sfml-2.4.2-windows-vc15-32bit\lib\32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;sfml-main-d.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;winmm.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;glu32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glew32s.lib;BulletDynamics-debug.lib;BulletCollision-debug.lib;LinearMath-debug.lib;Parser32-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(SolutionDir)\..\..\.libraries\glew\include;$(SolutionDir)\..\..\.libraries\sfml-2.4.2-windows-vc15-32bit\include;$(SolutionDir)\..\..\.libraries\cpp-toolkit\headers;$(SolutionDir)\..\..\.libraries\cpp-toolkit\sources;$(SolutionDir)\..\..\.libraries\targa\src;$(SolutionDir)\..\..\.libraries\targa\include;$(SolutionDir)\..\..\.libraries\tinyobjloader-1.0\include;$(SolutionDir)\..\..\.libraries\glm\glm;$(SolutionDir)\..\..\.libraries\bullet-2.87\src;$(SolutionDir)\..\..\code\header;$(SolutionDir)\..\..\.libraries\parser\include;$(SolutionDir)\..\..\.libraries\rapidxml</IncludePath>
+      <Define>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;SFML_STATIC;GLEW_STATIC;_SCL_SECURE_NO_WARNINGS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;SFML_STATIC;GLEW_STATIC;_SCL_SECURE_NO_WARNINGS;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(SolutionDir)\..\..\.libraries\glew\include;$(SolutionDir)\..\..\.libraries\sfml-2.4.2-windows-vc15-32bit\include;$(SolutionDir)\..\..\.libraries\cpp-toolkit\headers;$(SolutionDir)\..\..\.libraries\cpp-toolkit\sources;$(SolutionDir)\..\..\.libraries\targa\src;$(SolutionDir)\..\..\.libraries\targa\include;$(SolutionDir)\..\..\.libraries\tinyobjloader-1.0\include;$(SolutionDir)\..\..\.libraries\glm\glm;$(SolutionDir)\..\..\.libraries\bullet-2.87\src;$(SolutionDir)\..\..\code\header;$(SolutionDir)\..\..\.libraries\parser\include;$(SolutionDir)\..\..\.libraries\rapidxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)\..\..\.libraries\cpp-toolkit\sources;$(SolutionDir)\..\..\.libraries\cpp-toolkit\headers;$(SolutionDir)\..\..\.libraries\glew\lib;$(SolutionDir)\..\..\.libraries\bullet-2.87\lib\vs-2017\32bit;$(SolutionDir)\..\..\.libraries\parser\lib;$(SolutionDir)\..\..\.libraries\sfml-2.4.2-windows-vc15-32bit\lib\32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;sfml-main.lib;sfml-system-s.lib;sfml-window-s.lib;winmm.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glew32s.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;Parser32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(SolutionDir)\..\..\.libraries\glew\include;$(SolutionDir)\..\..\.libraries\sfml-2.4.2-windows-vc15-32bit\include;$(SolutionDir)\..\..\.libraries\cpp-toolkit\headers;$(SolutionDir)\..\..\.libraries\cpp-toolkit\sources;$(SolutionDir)\..\..\.libraries\targa\src;$(SolutionDir)\..\..\.libraries\targa\include;$(SolutionDir)\..\..\.libraries\tinyobjloader-1.0\include;$(SolutionDir)\..\..\.libraries\glm\glm;$(SolutionDir)\..\..\.libraries\bullet-2.87\src;$(SolutionDir)\..\..\code\header;$(SolutionDir)\..\..\.libraries\parser\include;$(SolutionDir)\..\..\.libraries\rapidxml</IncludePath>
+      <Define>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;SFML_STATIC;GLEW_STATIC;_SCL_SECURE_NO_WARNINGS;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\.libraries\targa\src\targa.c" />
+    <ClCompile Include="..\..\code\main.cpp" />
+    <ClCompile Include="..\..\code\source\Actor.cpp" />
+    <ClCompile Include="..\..\code\source\Catapult.cpp" />
+    <ClCompile Include="..\..\code\source\Door.cpp" />
+    <ClCompile Include="..\..\code\source\Joints.cpp" />
+    <ClCompile Include="..\..\code\source\Material.cpp" />
+    <ClCompile Include="..\..\code\source\Mesh.cpp" />
+    <ClCompile Include="..\..\code\source\Model.cpp" />
+    <ClCompile Include="..\..\code\source\My_Scene.cpp" />
+    <ClCompile Include="..\..\code\source\Physic_World.cpp" />
+    <ClCompile Include="..\..\code\source\Platform.cpp" />
+    <ClCompile Include="..\..\code\source\RigidBody.cpp" />
+    <ClCompile Include="..\..\code\source\Scene.cpp" />
+    <ClCompile Include="..\..\code\source\Shader_Program.cpp" />
+    <ClCompile Include="..\..\code\source\Skybox.cpp" />
+    <ClCompile Include="..\..\code\source\Texture.cpp" />
+    <ClCompile Include="..\..\code\source\Texture2D.cpp" />
+    <ClCompile Include="..\..\code\source\Texture_Cubemap.cpp" />
+    <ClCompile Include="..\..\code\source\Tool.cpp" />
+    <ClCompile Include="..\..\code\source\Transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Tool.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Tool.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\.libraries\targa\include\targa.h" />
+    <ClInclude Include="..\..\code\header\Actor.hpp" />
+    <ClInclude Include="..\..\code\header\Camera.hpp" />
+    <ClInclude Include="..\..\code\header\Catapult.hpp" />
+    <ClInclude Include="..\..\code\header\Circle.hpp" />
+    <ClInclude Include="..\..\code\header\Color_Buffer.hpp" />
+    <ClInclude Include="..\..\code\header\Color_Buffer_Rgba8888.hpp" />
+    <ClInclude Include="..\..\code\header\Directional_Light.hpp" />
+    <ClInclude Include="..\..\code\header\Door.hpp" />
+    <ClInclude Include="..\..\code\header\Joints.hpp" />
+    <ClInclude Include="..\..\code\header\Light.hpp" />
+    <ClInclude Include="..\..\code\header\Material.hpp" />
+    <ClInclude Include="..\..\code\header\Mesh.hpp" />
+    <ClInclude Include="..\..\code\header\Model.hpp" />
+    <ClInclude Include="..\..\code\header\My_Scene.hpp" />
+    <ClInclude Include="..\..\code\header\OpenGL.hpp" />
+    <ClInclude Include="..\..\code\header\Physic_World.hpp" />
+    <ClInclude Include="..\..\code\header\Plane.hpp" />
+    <ClInclude Include="..\..\code\header\Platform.hpp" />
+    <ClInclude Include="..\..\code\header\Point_Light.hpp" />
+    <ClInclude Include="..\..\code\header\RigidBody.hpp" />
+    <ClInclude Include="..\..\code\header\Scene.hpp" />
+    <ClInclude Include="..\..\code\header\Shader.hpp" />
+    <ClInclude Include="..\..\code\header\Shader_List.hpp" />
+    <ClInclude Include="..\..\code\header\Shader_Program.hpp" />
+    <ClInclude Include="..\..\code\header\Shape.hpp" />
+    <ClInclude Include="..\..\code\header\Skybox.hpp" />
+    <ClInclude Include="..\..\code\header\Terrain.hpp" />
+    <ClInclude Include="..\..\code\header\Texture.hpp" />
+    <ClInclude Include="..\..\code\header\Texture2D.hpp" />
+    <ClInclude Include="..\..\code\header\Texture_Cubemap.hpp" />
+    <QtMoc Include="..\..\code\header\Tool.h" />
+    <ClInclude Include="..\..\code\header\Transform.hpp" />
+    <ClInclude Include="..\..\code\header\Vertex_Array.hpp" />
+    <ClInclude Include="..\..\code\header\Vertex_Buffer.hpp" />
+    <ClInclude Include="..\..\code\header\Windmill.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="msvc2017" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
