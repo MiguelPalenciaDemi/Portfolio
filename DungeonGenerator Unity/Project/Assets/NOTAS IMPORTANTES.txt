@@ -1,0 +1,32 @@
+﻿--ESPAÑOL--
+
+La tool se encuentra dentro del menu Window -> Dungeon Generator.
+Le he puesto un máximo de tamaño, sobre todo para que no se cuelgue, ya es de un tamaño 100.000 objetos como máximo.
+El tamaño de las habitaciones, como el numero están basado en el numero mayor posible sin que entre en conflictos y la dll no responda. 
+Todas las dungeons generadas se guardan en Prefabs.
+
+SE GUARDA LA ÚLTIMA DUNGEON CREADA
+
+El script del wrapper está en scripts. La herramienta en Editor.
+
+El código que se utiliza en esta práctica está completamente escrito por mi. A excepción del código fuente de la DLL, el autor es Sergio Alonso Martínez https://www.linkedin.com/in/samupo/
+
+Miguel Palencia De Miguel -> miguelpalenciademi@gmail.com
+
+
+--ENGLISH
+
+
+The tool is located in the Window -> Dungeon Generator menu.
+
+The size of the rooms, as the number is based on the largest possible number without entering into conflicts
+
+All generated dungeons are saved as Prefabs.
+
+THE LAST DUNGEON CREATED IS SAVED
+
+The wrapper script is in scripts. The tool in Editor.
+
+The code that is used in this practice is completely written by me. With the exception of the source code of the DLL, the author is Sergio Alonso Martínez https://www.linkedin.com/in/samupo/
+
+Miguel Palencia De Miguel -> miguelpalenciademi@gmail.com

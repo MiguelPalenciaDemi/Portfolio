@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 30b03fbe30152cb47b2ca04e62bf80cd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - floorPrefab: {fileID: 667243819814420018, guid: 2f300667b3da57e4f9b64925e09549bb,
+      type: 3}
+  - wallPrefab: {fileID: 2175248904484228131, guid: 5f2bb3bea796e7d4bb0dab45163f88c0,
+      type: 3}
+  - dungeonPrefab: {fileID: 1218941051900756610, guid: bb164c0a4ce077e4ab39f43ea0d6dfed,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
